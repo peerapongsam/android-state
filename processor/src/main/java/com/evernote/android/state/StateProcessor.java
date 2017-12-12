@@ -344,7 +344,7 @@ public class StateProcessor extends AbstractProcessor {
                                 }
                             }
 
-                            restoreMethodBuilder = restoreMethodBuilder.addStatement("target.set$N(HELPER.<$T>get$N(state, $S))", fieldName,
+                            restoreMethodBuilder = restoreMethodBuilder.addStatement("target.set$N(HELPER.get$N(state, $S))", fieldName,
                                     genericName, mapping, fieldName);
                         } else {
                             InsertedTypeResult insertedType = getInsertedType(field, true);
